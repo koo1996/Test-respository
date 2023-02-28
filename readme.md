@@ -12,3 +12,11 @@
 6. 그래프와 순회
 7. 투 포인터
 8. 최단 경로
+
+기본) 스택,큐,우선순위큐,Deque(★),해시맵,문자열
+
+초급) PriorityQueue 완전탐색
+
+중급) BinarySearch DFS BFS Recursion
+
+심화) Graph DP
