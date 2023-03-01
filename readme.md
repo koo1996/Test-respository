@@ -27,3 +27,8 @@
 2. sw expert academy(삼성) : https://swexpertacademy.com/main/main.do
 
 3. 프로그래머스: https://programmers.co.kr/
+
+* 스택(Stack)
+  * 나중에 넣은 데이터를 먼저 빼는 후입선출(LIFO - Last In First Out) 구조
+  * ex) 박스 쌓기, 트럭에 물건 넣기
+  * 파이썬 기본 리스트에서 append()와 pop() 메서드를 사용하여 구현
