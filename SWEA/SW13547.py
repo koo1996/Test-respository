@@ -6,4 +6,4 @@ for tc in range(1,T+1): # 테스트케이스
         answer = 'NO'
     else:
         answer = 'YES'
-    print(f'#{tc} {answer}')
+    print(f'#{tc} {answer}') 
