@@ -6,6 +6,7 @@ for tc in range(1,T+1):
     cnt = 0
     cnt2 = 0
     while cnt < Day:
+        # 특별 케이스 추가 => n일 = 2 / 0 1 0 0 0 1 1  => 답이 2 (5가 나오면 오답)
         for i in range(len(Date)):     
             if cnt == Day:
                 break
