@@ -35,6 +35,7 @@
 
 ---------------------------
 
-* JavaScript
+* JavaScript - [JS](https://github.com/koo1996/Test_Space/JavaScript)
 
-Nomad Coders(노마드코더) : 바닐라 JS로 크롬 앱 만들기 (23.04.10 ~ 23.04.24)
+* Java - [Java](https://github.com/koo1996/Test_Space/Java)
+
