@@ -35,7 +35,7 @@
 
 ---------------------------
 
-* JavaScript - [JS](https://github.com/koo1996/Test_Space/JavaScript)
+* JavaScript - [JS](JavaScript/)
 
-* Java - [Java](https://github.com/koo1996/Test_Space/Java)
+* Java - [Java](Java/)
 
