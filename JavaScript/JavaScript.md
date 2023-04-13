@@ -14,6 +14,10 @@
 * undefined은 variable에 대해서 인지하고 있지만, 값이 없는것
 * null은 값이 없는것
 
+* push
+```JavaScript
+daysOfWeek.push() : 항목 하나를 array 안에 추가 
+```
 * array
 
 ``` JavaScript
@@ -27,6 +31,7 @@ console.log(daysOfWeek);
 ```
 
 * object
+    * argument는 function을 실행하는 동안 어떤 정보를 function에게 보낼 수 있는 방법
 
 ``` JavaScript
 const player = {
