@@ -82,3 +82,6 @@ console.log(player.name);
 player.sayhello("lynn");
 player.sayhello("nico");
 ```
+
+* 1번 퀴즈
+[계산기 만들기](1Quiz.js/)
