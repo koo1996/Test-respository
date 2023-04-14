@@ -85,3 +85,16 @@ player.sayhello("nico");
 
 * 1번 퀴즈
 [계산기 만들기](1Quiz.js/)
+
+* return
+
+```JavaScript
+const age = 96;
+function calculateKrAge(ageOfForeigner){
+    return ageOfForeigner + 2; 
+}
+
+const krAge = calculateKrAge(age);
+
+console.log(krAge);
+```
