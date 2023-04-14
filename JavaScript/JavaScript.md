@@ -98,3 +98,14 @@ const krAge = calculateKrAge(age);
 
 console.log(krAge);
 ```
+
+* conditionals
+    * prompt(message?) : 사용자에게 message를 보여주고 값을 넣으라고 말한다.
+    * parseInt() : string을 number로 변환한다.
+    * typeof : 변수의 타입을 출력한다. 
+
+```javascript
+const age = parseInt(prompt("How old are you?"));
+
+console.log(typeof age, age);
+```
