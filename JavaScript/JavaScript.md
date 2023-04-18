@@ -99,13 +99,24 @@ const krAge = calculateKrAge(age);
 console.log(krAge);
 ```
 
-* conditionals
+* condition
     * prompt(message?) : 사용자에게 message를 보여주고 값을 넣으라고 말한다.
     * parseInt() : string을 number로 변환한다.
     * typeof : 변수의 타입을 출력한다. 
+    * isNaN(number: number) : 변수가 NaN인지 아닌지 알려준다.(boolean - true, false)
 
 ```javascript
 const age = parseInt(prompt("How old are you?"));
 
 console.log(typeof age, age);
+```
+
+```javascript
+const age = parseInt(prompt("How old are you?"));
+
+if(isNaN(age)){
+    console.log("Please write a number");
+} else {
+    console.log("Thank you for writing your age.");
+}
 ```
