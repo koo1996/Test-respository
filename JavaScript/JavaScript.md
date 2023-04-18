@@ -158,3 +158,21 @@ if(isNaN(age) || age < 0) {
     console.log("You can do whatever you want.");
 }
 ```
+
+* HTML JavaScript
+    * JavaScript는 HTML에 이미 연결되어 있다.
+    * document (object) 는 모든 것들의 시작점
+    
+```javascript
+const title = document.getElementById("title") //HTML에서 id를 통해 element를 찾아준다.
+
+title.innerText = "Got you!" // innerText 변경
+
+console.log(title.id);
+console.log(title.className);
+
+document.title // JavaScirpt에서 title을 읽을 수 있다.
+document.body // JavaScript에서 HTML 항목을 읽을 수 있다.
+
+```
+
