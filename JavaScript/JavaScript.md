@@ -168,11 +168,10 @@ const title = document.getElementById("title") //HTML에서 id를 통해 element
 
 title.innerText = "Got you!" // innerText 변경
 
-console.log(title.id);
-console.log(title.className);
+console.log(title.id); // title.id 출력
+console.log(title.className); // title.className 출력
 
 document.title // JavaScirpt에서 title을 읽을 수 있다.
 document.body // JavaScript에서 HTML 항목을 읽을 수 있다.
-
 ```
 
