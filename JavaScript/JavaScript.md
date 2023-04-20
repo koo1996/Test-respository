@@ -175,3 +175,39 @@ document.title // JavaScirpt에서 title을 읽을 수 있다.
 document.body // JavaScript에서 HTML 항목을 읽을 수 있다.
 ```
 
+```javascript
+const title = document.querySelectorAll(".hello hi");
+const title = document.getElementById("hello");
+
+console.log(title);
+```
+
+```javascript
+const title = document.querySelector("div.hello:first-child h1");
+
+function handleTitleClick() {
+    title.style.color = "blue";
+}
+
+title.addEventListener("Click", handleTitleClick);
+```
+
+```javascript
+const title = document.querySelector("div.hello:first-child h1");
+
+function handleTitleClick() {
+    title.style.color = "blue";
+}
+
+function handleMouseEnter() {
+    title.innerText = "Mouse is here!";
+}
+
+function handleMouseLeave() {
+    title.innerText = "Mouse is gone!";
+}
+title.addEventListener("click", handleTitleClick);
+title.addEventListener("mouseenter", handleMouseEnter);
+title.addEventListener("mouseleave", handleMouseLeave);
+
+```
