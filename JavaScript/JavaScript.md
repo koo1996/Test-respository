@@ -235,3 +235,24 @@ window.addEventListener("online", handleWindowOnline);
 
 * 2번 퀴즈
 [애플리케이션 만들기](2Quiz.js/)
+
+```javascript
+const h1 = document.querySelector("div.hello:first-child h1");
+
+function handleTitleClick() {
+    const currentColor = h1.style.color;
+    let newColor;   
+    if(currentColor === "blue") {
+        newColor = "tomato";
+    } else {
+        newColor = "blue";
+    }
+    h1.style.color = newColor;
+}
+
+function handleMouseEnter() {
+    h1.innerText = "Mouse is here!";
+}
+
+h1.addEventListener("click", handleTitleClick);
+```
