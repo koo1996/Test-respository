@@ -1,13 +1,41 @@
-const h2 = document.querySelector("h2");
+const body = document.body;
 
-function handleTitleResize() {
+import "./styles.css";
+
+const BIG_SCREEN = "bigScreen";
+const MEDIUM_SCREEN = "mediumScreen";
+const SMALL_SCREEN = "smallScreen";
+
+function handleResize() {
   const length = window.innerWidth;
   if (length < 700) {
-    h2.body.style.backgroundColor = "blue";
+    body.classList.add(BIG_SCREEN);
+    body.classList.remove(MEDIUM_SCREEN);
   } else if (length > 700 && length < 1100) {
-    h2.body.style.backgroundColor = "purple";
-  } else if (length > 1100) {
-    h2.body.style.backgroundColor = "yellow";
+    body.classList.add(MEDIUM_SCREEN);
+    body.classList.remove(BIG_SCREEN, SMALL_SCREEN);
+  } else {
+    body.classList.remove(MEDIUM_SCREEN);
+    body.classList.add(SMALL_SCREEN);
   }
 }
-window.addEventListener("resize", handleTitleResize);
+
+window.addEventListener("resize", handleResize);
+
+```css
+h2 {
+  color: white;
+}
+
+.bigScreen {
+  background-color: #f1c40f;
+}
+
+.mediumScreen {
+  background-color: #9b59b6;
+}
+
+.smallScreen {
+  background-color: #3498db;
+}
+```

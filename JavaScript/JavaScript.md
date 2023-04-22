@@ -256,3 +256,6 @@ function handleMouseEnter() {
 
 h1.addEventListener("click", handleTitleClick);
 ```
+
+* 3번 퀴즈
+[if..else](3quiz.js/)
