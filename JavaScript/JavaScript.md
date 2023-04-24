@@ -258,4 +258,7 @@ h1.addEventListener("click", handleTitleClick);
 ```
 
 * 3번 퀴즈
-[if..else](3quiz.js/)
+[if..else](3Quiz.js/)
+
+* 4번 퀴즈
+[JS Casino](4Quiz.js)
