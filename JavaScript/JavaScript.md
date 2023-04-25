@@ -262,3 +262,42 @@ h1.addEventListener("click", handleTitleClick);
 
 * 4번 퀴즈
 [JS Casino](4Quiz.js)
+
+```javascript
+const loginInput = document.querySelector("#login-form input");
+const loginButton = document.querySelector("#login-form button");
+
+function onLoginBtnClick() {
+    console.log(loginInput.value);
+}
+
+loginButton.addEventListener("click", onLoginBtnClick);
+```
+
+* Form Submission
+
+```javascript
+const loginInput = document.querySelector("#login-form input");
+const loginButton = document.querySelector("#login-form button");
+
+function onLoginBtnClick() {
+    const username = loginInput.value;
+    console.log(username);
+}
+
+loginButton.addEventListener("click", onLoginBtnClick);
+```
+
+* Events
+
+```javascript
+const loginInput = document.querySelector("#login-form input");
+const loginForm = document.querySelector("#login-form");
+
+function onLoginSubmit(event) {
+    event.preventDefault();
+    console.log(loginInput.value);
+}
+
+loginForm.addEventListener("submit", onLoginSubmit);
+```
