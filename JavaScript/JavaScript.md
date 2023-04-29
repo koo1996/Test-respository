@@ -320,3 +320,6 @@ function handleLinkclick(event) {
 loginForm.addEventListener("submit", onLoginSubmit);
 link.addEventListener("click", handleLinkclick)
 ```
+
+* 5번 퀴즈
+[Clock](5Quiz.js)
