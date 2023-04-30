@@ -323,3 +323,6 @@ link.addEventListener("click", handleLinkclick)
 
 * 5번 퀴즈
 [Clock](5Quiz.js)
+
+* 6번 퀴즈
+[Click](6Quiz.js)
