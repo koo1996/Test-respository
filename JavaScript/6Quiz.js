@@ -1,8 +1,12 @@
 const btn = document.querySelector("button");
 
-function randomGradient() {
-  const nowColor1 = colors[Math.floor(Math.random() * colors.length)];
-  const nowColor2 = colors[Math.floor(Math.random() * colors.length)];
-  document.body.style.background = `linear-gradient(to right, ${nowColor1},${nowColor2})`;
+function handleClick() {
+  const a = colors[Math.floor(Math.random() * colors.length)];
+  const b = colors[Math.floor(Math.random() * colors.length)];
+  if (a === b) {
+    return handleClick();
+  }
+  document.body.style.background = `linear-gradient(to left, ${a}, ${b})`;
 }
-btn.addEventListener("click", randomGradient);
+
+btn.addEventListener("click", handleClick);
