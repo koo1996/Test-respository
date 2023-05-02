@@ -1,6 +1,6 @@
 # JavaScript
 
-- Nomad Coders(노마드코더) : 바닐라 JS로 크롬 앱 만들기 (23.04.10 ~ 23.04.24)
+- Nomad Coders(노마드코더) : 바닐라 JS로 크롬 앱 만들기 (23.04.17 ~ 23.05.01)
 
 
 * variable : 변수 공백x
@@ -327,5 +327,5 @@ link.addEventListener("click", handleLinkclick)
 * 6번 퀴즈
 [Click](6Quiz.js)
 
-* 프로젝트 
+* 프로젝트 링크
 [Project](https://koo1996.github.io/)
