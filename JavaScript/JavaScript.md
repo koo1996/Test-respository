@@ -326,3 +326,6 @@ link.addEventListener("click", handleLinkclick)
 
 * 6번 퀴즈
 [Click](6Quiz.js)
+
+* 프로젝트 
+[Project](https://koo1996.github.io/)
