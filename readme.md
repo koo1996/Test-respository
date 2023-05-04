@@ -6,7 +6,30 @@
 
 1. 백트래킹
 2. 스택
+```python
+stack.append(2)
+stack.append(5)
+stack.append(8)
+
+print(stack.pop())
+print(stack.pop())
+print(stack.pop())
+print(stack)
+# In 2 - 5 - 8 / Out 8 - 5 - 2  
+```
 3. 큐, 덱
+```python
+# 큐
+data.put(2)
+data.put(5)
+data.put(8)
+
+#FIFO
+print(data.get())
+print(data.get())
+print(data.get())
+# 2 5 8
+```
 4. 이분 탐색
 5. 우선순위 큐
 6. 그래프와 순회
