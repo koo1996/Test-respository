@@ -51,6 +51,12 @@ print(data.get())
 
 3. 프로그래머스: https://programmers.co.kr/
 
+
+* 파이썬과 큐(Queue)
+  * Enqueue : 큐에서 데이터를 입력하는 기능
+
+  * Dequeue : 큐에서 데이터를 꺼내는 기능
+  
 * 스택(Stack)
   * 나중에 넣은 데이터를 먼저 빼는 후입선출(LIFO - Last In First Out) 구조
   * ex) 박스 쌓기, 트럭에 물건 넣기
