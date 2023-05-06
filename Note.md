@@ -42,6 +42,24 @@
         * 구현이 쉽지만, 검색 대상이 많은 경우 수행시간의 증가로 비효율적임
     * 이진 검색 - 자료의 가운데 항목의 키 값과 비교하여 다음 검색의 위치를 결정하고 검색을 계속하는 방법
         * 이진 검색을 하기 위해서는 자료가 정렬된 상태
+``` python
+def binary_search(target, data):
+    data.sort()
+    start = 0
+    end = len(data) - 1
+
+    while start <= end:
+        mid = (start + end) // 2
+
+        if data[mid] == target:
+            return mid 
+        elif data[mid] < target:
+            start = mid + 1
+        else:
+            end = mid -1
+
+    return None
+```
     * 인덱스
         * 데이터베이스에서 유래, 테이블에 대한 동작 속도를 높임
         * 룩 업 테이블 등의 용어로 사용함
