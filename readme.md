@@ -4,8 +4,27 @@
 
 * 다양한 알고리즘 문제 풀이
 
+* 빅오 표기법
+```
+O(1) > O(logN) > O(N) > O(NlogN) > O(N^2) > O(N^3) > O(2^n)
+
+시간제한이 1초인 문제를 만났을 때 일반적인 기준
+N의 범위가 500인 경우 : 시간 복잡도가 O(N^3)
+N의 범위가 2000인 경우 : 시간 복잡도가 O(N^2)
+N의 범위가 100,000인 경우 : 시간 복잡도가 O(NlogN)
+N의 범위가 10,000,000인 경우 : 시간 복잡도가 O(N)
+```
+
+``` python
+import time
+start_time = time.time() # 측정 시작
+# 프로그램 소스코드
+end_time = time.time() # 측정 종료
+print("time:", end_time - start_time) # 수행 시간 출력
 1. 백트래킹
 2. 스택
+```
+
 ```python
 stack.append(2)
 stack.append(5)
