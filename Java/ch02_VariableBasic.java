@@ -18,5 +18,15 @@ public class ch02_VariableBasic {
         avg = (gradeJava + gradeC) / 2;
         name = "Yu, DongHwan";
         studentNum = 600;
+
+        System.out.println(studentNum + name + avg);
+        
+        double d = 3.1412345789;
+        float f = 3.14123456789F;
+        System.out.println(d + f);
+        
+        long l = 1000000000000L;
+        l = 1_000_000_000_000L;
+        System.out.println(l);
     }
 }
