@@ -1,18 +1,21 @@
-X = "12321"
-Y = "42531"
-# X = sorted(X,reverse = True)
-# Y = sorted(Y,reverse = True)
-list_ = [0 for i in range(10)]
+def solution(X, Y):
+    box_X = [0 for _ in range(10)]
+    box_Y = [0 for _ in range(10)]
+    answer = ''
+    for i in X:
+        box_X[int(i)] += 1
 
-# for i in range(10):
-#     dict_1[i] = 0
+    for j in Y:
+        box_Y[int(j)] += 1
 
-for j in X:
-    j = int(j)
-    list_[j] += 1
+    for k in range(len(box_X)):
+        answer += str(k) * min(box_X[k],box_Y[k])
 
-# for k in range(len(Y)):
-#     dict_1[Y[k]] += 1
+    answer = answer[::-1]
 
-
-print(list_)
+    if len(answer) == 0:
+        return '-1'
+    elif answer[0] == '0':
+        return '0'
+    else:
+        return answer
