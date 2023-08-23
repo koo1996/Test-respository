@@ -11,5 +11,35 @@
 9. 입출력과 예외처리
 10. 공공 API활용 프로젝트
 
-day4 - 1차원 배열
+
+* day4 - 1차원 배열
+```java
+//로또
+package day4;
+
+public class LottoMachine1 {
+
+	public static void main(String[] args) {
+		int[] ary = new int[6];
+		
+		for (int i=0; i < ary.length; i++) {
+			ary[i] = (int)(Math.random()*45) + 1;			
+			for (int j=0; j < i; j++) {
+				if(ary[i] == ary[j]) {
+					i--;
+					break;
+				}
+			}
+		}
+		System.out.print("오늘의 로또 번호 - ");
+		for (int i=0; i < ary.length; i++)			
+			if (i < ary.length-1)
+				System.out.print(ary[i]+",");
+			else
+				System.out.print(ary[i]);
+
+	}
+
+}
+```
 day5 - 2차원 배열
