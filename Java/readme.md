@@ -42,4 +42,32 @@ public class LottoMachine1 {
 
 }
 ```
-day5 - 2차원 배열
+* day5 - 2차원 배열
+* day6 - 메서드
+```java
+package day6_p;
+
+public class MethodLab7 {
+
+	public static void main(String[] args) {
+		printArray(powerArray(2));
+
+	}
+	static int[] powerArray(int a) {
+		int[] num = new int[10];
+		for (int i = 1; i < 11; i++) {
+			num[i-1] = i * a;					
+		}
+		return num;	
+	}
+		
+	static void printArray(int[] num) {
+		for (int i = 0; i < num.length; i++) {
+			System.out.print(num[i]);
+			if (i != num.length-1) {
+				System.out.print(",");
+			}				
+		}
+	}
+}
+```
