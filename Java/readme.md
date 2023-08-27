@@ -71,3 +71,54 @@ public class MethodLab7 {
 	}
 }
 ```
+
+* day7 - 클래스
+```java
+package day7_p;
+
+class Product {
+	String name;
+	int balance;
+	int price;
+	
+	Product() {
+		this("듀크인형", 5, 10000);
+	}
+	
+	Product(String name, int balance, int price){
+		this.name = name;
+		this.balance = balance;
+		this.price = price;
+	}
+	
+	String getName() {
+		return name;
+	}
+	
+	int getBalance() {
+		return balance;
+	}
+	
+	int getPrice() {
+		return price;
+	}
+} 
+
+public class ProdcutTest {
+
+	public static void main(String[] args) {
+		
+		Product ary[] = new Product[5];
+		ary[0] = new Product("a", 5, 100);
+		ary[1] = new Product("b", 4, 300);
+		ary[2] = new Product();
+		ary[3] = new Product("c", 3, 500);
+		ary[4] = new Product("d", 2, 700);
+		
+		for (Product p : ary) 
+			System.out.printf("%s\t%d\t%d\n",p.getName(),p.getBalance(),p.getPrice());
+	}
+
+}
+
+```
