@@ -12,7 +12,7 @@
 10. 공공 API활용 프로젝트
 
 
-* day4 - 1차원 배열
+## day4 - 1차원 배열
 ```java
 //로또
 package day4;
@@ -42,8 +42,8 @@ public class LottoMachine1 {
 
 }
 ```
-* day5 - 2차원 배열
-* day6 - 메서드
+## day5 - 2차원 배열
+## day6 - 메서드
 ```java
 package day6_p;
 
@@ -72,7 +72,7 @@ public class MethodLab7 {
 }
 ```
 
-* day7 - 클래스
+## day7 - 클래스
 ```java
 package day7_p;
 
@@ -122,3 +122,19 @@ public class ProdcutTest {
 }
 
 ```
+## day8 - 상속
+상속 구문
+
+- 자바에서 생성되는 클래스는 반드시 부모 클래스를 한 개 갖게 된다. 
+- 부모 클래스 정의를 생략한 경우 자동으로 java.lang.Object 클래스를 상속하게 된다.
+- java.lang.Object 클래스는 자바에서 정해놓은 최상위 클래스이다.
+- 반드시 한 개의 클래스만 상속 가능하다.(단일 상속)
+- 상속을 통해서 조상이 가지고 있는 대부분의 멤버들을 물려받게 된다.
+    (생성자와 private 멤버는 제외)
+- 클래스를 객체 생성할 때 생성자를 호출한 클래스만 객체 생성하는 것이 아니고 조상 클래스들의 객체도 생성된다.
+- String toString() : 객체에 대한 정보를 하나의 문자열로 리턴 
+- 자바의 접근 제어자 : pulic, protected, 생략(default), private
+- 자바의 활용 제어자 : static, final, abstract
+- 클래스 : public, 생략
+- 멤버변수, 메서드, 생성자 : public, protected, 생략(default), private
+
