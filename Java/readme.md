@@ -137,4 +137,17 @@ public class ProdcutTest {
 - 자바의 활용 제어자 : static, final, abstract
 - 클래스 : public, 생략
 - 멤버변수, 메서드, 생성자 : public, protected, 생략(default), private
+- static : 멤버변수, 메서드
+- final : 클래스, 멤버변수, 메서드, 지역변수
+- abstract : 클래스, 메서드
+
+## day9 - 다형성
+* 다형성 : 조상 타입의 변수로 자손 타입의 객체들을 담아서 사용할 수 있는 기능
+조상 타입으로 자손 타입을 참조할 수 있다.
+
+어떠한 클래스 타입의 변수냐에 따라 접근할 수 있는 멤버의 사양이 정해진다.
+
+* Auto Boxing / Auto UnBoxing (Jave 5)
+객체가 와야할 자리에 기본형 데이터가 지정될 때 컴파일시 객체로 변환해 주는 기능
+
 
