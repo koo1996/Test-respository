@@ -170,4 +170,14 @@ public class ProdcutTest {
     java.lang.Exception 클래스를 상속해야 한다.
     java.lang.RuntimeException 도 가능
 
+## day11 - 자바의 API
+    java.xxx - 기본(core)
+    javax.xxx - 확장(extends)
+    org.xxx - 
+    
+    java.lang, java.util, java.io, java.net, java.sql
 
+    String --> 객체생성시 초기화되는 문자열 내용을 변경할 수 없다.
+    StringBuffer(StringBuilder) --> 문자열을 저장할 버퍼를 만들고 이 버퍼안에 문자열 추가,삽입, 삭제 등 편집 위주
+
+    "abc" + v1 + "def" + v2 + "!!" --> Java 5 - 최적화 컴파일
