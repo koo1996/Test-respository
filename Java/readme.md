@@ -181,3 +181,36 @@ public class ProdcutTest {
     StringBuffer(StringBuilder) --> 문자열을 저장할 버퍼를 만들고 이 버퍼안에 문자열 추가,삽입, 삭제 등 편집 위주
 
     "abc" + v1 + "def" + v2 + "!!" --> Java 5 - 최적화 컴파일
+
+## day12 
+    LinkedHashSet
+
+
+## day13
+    [자바 입출력(I/O) API의 특징]
+    - OS에 의존적인 처리 과정을 거친다. -> 플랫폼에 무관한 프로그램 언어다.
+    -----------------------------------> 스트림(Stream)이라는 논리적인 장치를 이용하여 I/O
+                                                            --------------객체
+    - 스트림 객체를 이용해서 입출력 작업을 처리한다.
+    --> 단방향 처리만 가능
+        입력스트림, 출력스트림 ---> API가 입력용과 출력으로 나눠진다.
+    --> 입출력 단위에 따라 바이트스트림과 문자스트림으로 나눠진다.
+    이진파일 : 바이트스트림 - InputStream, OutputStream
+    텍스트파일 : 문자스트림 - Reader, Writer
+    InputStreamReader, OutputStreamWriter --> 바이트스트림 객체를 문자스트림 객체로 변환
+    파일이름에 File로 시작하는 클래스들을 파일을 오픈하는 기능을 지원한다.
+
+    "c:/Temp/test.txt" ---> 절대패스
+    "c:\\Temp\\test.txt"
+    "../../../Temp/test.txt" ---> 상대패스
+
+    [try ~ catch with resource]
+
+    try 예약어와 오픈 중괄호 사이에 (객체생성코드)를 지정하면 생성된 객체는 try ~ catch 구문이 종료될 때 자동으로 close 된다.
+
+    (객체생성코드) ---> close를 필요로 하는 객체의 생성식
+                ----------- closable 이라는 인터페이스를 추가 상속하는 클래스의 객체
+    
+    ANSI == KSC5601 == EUC-KR == CP949
+
+    UTF-8
