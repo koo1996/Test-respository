@@ -214,3 +214,35 @@ public class ProdcutTest {
     ANSI == KSC5601 == EUC-KR == CP949
 
     UTF-8
+
+## day14
+
+JDBC --> Java DataBase Connectivity
+         Java + SQL
+        --> Mybatis
+        --> JPA
+
+Servlet & JSP --> Java Web Server Programming
+                
+                Spring & JSP
+                        Spring & Tjym;eaf
+직렬화 가능한 객체 구현
+1. Serializable 또는 EXternalizable 인터페이스를 상속을 해야 한다.
+2. 조상이 Serializable을 상속하고 있으면 자손에도 그대로 적용된다.
+3. 자손은 Serializable을 상속하고 있지만 조상은 Serializable을 상속하고 있지 않으면 자손에서만 직렬화가 일어난다.
+4. non-static, non-transient 멤버 변수들만 직렬화 대상이 된다.
+5. 직렬화의 대상이 되는 멤버 변수가 참조형일 때는 참조하는 객체도 직렬화 가능한 객체여야 한다. 그렇지 않으면 실행 시 NotSerializableException이 발생된다.
+
+java.net 패키지 -> 네트워크 프로그래밍 관련 API 들이 모여 있다.
+                TCP 소켓프로그래밍, UDP 소켓프로그래밍
+                웹 서버에 접속하여 컨텐츠를 요청하고 읽어오는 프로그래밍 ---> URL 클래스
+URL --> Uniform Resource Locator
+        어떠한 자원의 위치를 알리는 단일화된 형식의 문자열
+        HTTP URL --> HTTP 프로토콜 기반으로 서비스하는 서버 자원의 주소 문자열
+
+                http://서버도메인(서버IP주소)[:포트번호]/패스/파일  
+                                                      ---------- URI
+
+http://www.kma.go.kr/wid/queryDFSRSS.jsp?zone=1171062000
+                                        -----------------쿼리 문자열
+"http://openapi.seoul.go.kr:8088/796143536a756e69313134667752417a/xml/LampScpgmtb/1/100/"
