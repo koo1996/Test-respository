@@ -246,3 +246,47 @@ URL --> Uniform Resource Locator
 http://www.kma.go.kr/wid/queryDFSRSS.jsp?zone=1171062000
                                         -----------------쿼리 문자열
 "http://openapi.seoul.go.kr:8088/796143536a756e69313134667752417a/xml/LampScpgmtb/1/100/"
+
+## day15
+
+csv
+json0
+
+xml
+    객체생성식{
+        클래스의 바디
+    }
+    
+    class 클래스명 extends 부모클래스명 implements 부모인터페이스명 {
+        클래스의 바디
+
+    }
+
+javac
+java
+javap
+jar
+
+CGI(Common Gateway Interface)
+    모든 웹서버(HTTP 서버)가 지원하는 웹 표준 기술
+    구현 언어에 의존적이지 않다.
+    멀티 프로세스로 웹 클라이언트 요청을 다중 처리한다.
+
+---> Servlet
+    Java 프로그래밍 기술
+    멀티 스레드로 웹 클라이언트 요청을 다중 처리한다.
+
+(1) 추가스레드로 수행할 기능은 무엇인가?
+(2) 추가스레드를 몇개까지 기동시킬 건가?
+
+    --> 기동시키려는 스레드의 기능에 따라 스레드 클래스를 생성한다.
+
+        - java.lang.Thread를 상속하고 run() 메서드를 오버라이딩하여 스레드 기능 구현
+        - java.lang.Runable을 추가 상속하고 run() 메서드를 오버라이딩하여 스레드 기능 구현
+
+    --> MyThread1 my = new MyThread();
+        my.start();
+
+        MyThread2 my = new MyThread2();
+        Thread t = new Thread(my2);
+        t.start()
