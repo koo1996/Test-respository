@@ -290,3 +290,85 @@ CGI(Common Gateway Interface)
         MyThread2 my = new MyThread2();
         Thread t = new Thread(my2);
         t.start()
+
+## day16
+    daemon thread --> 다른 스래드들의 기능을 서포트하는 역할 
+                    모든 스레드가 종료되면 자동으로 종료되는 스레드
+                    무한루프 
+                    스레드를 객체 생성한 후, start()를 호출하기 전에 setDaemon() 이라는 메서드로 데몬 스레드로 만든다.
+    daemon process(서비스) --> 백그라운드에서 수행되는 프로세스로서 다른 프로세스들의 실행을 서포트하는 역할
+
+    Vector --> ArrayList --> Collections.synchronizedList(...)
+    old         new
+
+    StringBuffer StringBuilder
+
+    함수형프로그래밍 ---> 아규먼트로 함수를 전달하여 좀더 적용성 있는 프로그램을 개발할 수 있다. (파이썬,자바스크립트,R) ...
+    함수형 인터페이스, 람다식, 스트림(데이터열)
+
+    DB - mySQL
+
+    CRUD : Create Read Update Delete
+           삽입   읽기  수정   삭제
+           INSERT SELECT UPDATE DELETE ---> DML
+           -------------------------------게시판, 공지사항, 방명록
+
+    select 컬러명
+    form 테이브명;
+
+    select 컬러명리스트
+    from 테이블명
+    where 꺼내고싶은행에대조건식;
+
+    select *
+    from 테이블명
+    order by 정렬기준컬럼1 asc, 정렬기준컬럼2 asc;
+
+    select *
+    from 테이블명
+    order by 정렬기준컬럼1 desc, 정렬기준컬럼2 desc;
+
+    select 컬럼명리스트
+    from 테이블명
+    where 꺼내고 싶은 조건식;
+    order by 정렬기준컬럼 desc;
+
+    where month = 1 or month = 5 or month = 4 or month = 10
+    where month not in(1,5,4,10)
+    where month not in(1,5,4,10)
+
+    select * from emp where ename like 'A%'; 
+
+
+    where ename like 'A%'
+    where ename like '%A%';  : A시작, A포함하는, A끝 
+    where ename like 'A__'
+    where ename like '_A_'
+    select ename,sal from emp;
+    
+    select ename 직원이름, sal * 12 as 연봉 from emp; /* as는 생략 가능
+    as는 새로운 컬럼명 지정
+    
+    select ename "직원 이름", sal * 12 as 연봉 from emp;
+    컬럼에 공백을 넣고 싶으면 ""
+
+    select ename, sal from emp order by sal;
+    ASC(오름차순)는 디폴트 값이므로 생략 가능 
+ 
+    select ename, sal from emp order by sal desc;
+
+    select ename, sal, hiredate from emp where sal >= 2500 order by sal desc, ename desc;
+    order by는 첫번째 기준이 똑같으면 두번째 기준
+
+    select all job from emp;
+    all는 생략가능
+    
+    select distinct job from emp;
+    distinct는 중복값 제거
+
+    select distinct job, deptno from emp;
+    job, deptno 둘 다 동일하면 제거
+
+    select * from emp order by sal desc limit 3;
+    sal 내림차순 -> 3개만 출력
+ 
