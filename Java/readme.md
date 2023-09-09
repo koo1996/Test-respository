@@ -181,3 +181,194 @@ public class ProdcutTest {
     StringBuffer(StringBuilder) --> 문자열을 저장할 버퍼를 만들고 이 버퍼안에 문자열 추가,삽입, 삭제 등 편집 위주
 
     "abc" + v1 + "def" + v2 + "!!" --> Java 5 - 최적화 컴파일
+
+## day12 
+    LinkedHashSet
+
+
+## day13
+    [자바 입출력(I/O) API의 특징]
+    - OS에 의존적인 처리 과정을 거친다. -> 플랫폼에 무관한 프로그램 언어다.
+    -----------------------------------> 스트림(Stream)이라는 논리적인 장치를 이용하여 I/O
+                                                            --------------객체
+    - 스트림 객체를 이용해서 입출력 작업을 처리한다.
+    --> 단방향 처리만 가능
+        입력스트림, 출력스트림 ---> API가 입력용과 출력으로 나눠진다.
+    --> 입출력 단위에 따라 바이트스트림과 문자스트림으로 나눠진다.
+    이진파일 : 바이트스트림 - InputStream, OutputStream
+    텍스트파일 : 문자스트림 - Reader, Writer
+    InputStreamReader, OutputStreamWriter --> 바이트스트림 객체를 문자스트림 객체로 변환
+    파일이름에 File로 시작하는 클래스들을 파일을 오픈하는 기능을 지원한다.
+
+    "c:/Temp/test.txt" ---> 절대패스
+    "c:\\Temp\\test.txt"
+    "../../../Temp/test.txt" ---> 상대패스
+
+    [try ~ catch with resource]
+
+    try 예약어와 오픈 중괄호 사이에 (객체생성코드)를 지정하면 생성된 객체는 try ~ catch 구문이 종료될 때 자동으로 close 된다.
+
+    (객체생성코드) ---> close를 필요로 하는 객체의 생성식
+                ----------- closable 이라는 인터페이스를 추가 상속하는 클래스의 객체
+    
+    ANSI == KSC5601 == EUC-KR == CP949
+
+    UTF-8
+
+## day14
+
+JDBC --> Java DataBase Connectivity
+         Java + SQL
+        --> Mybatis
+        --> JPA
+
+Servlet & JSP --> Java Web Server Programming
+                
+                Spring & JSP
+                        Spring & Tjym;eaf
+직렬화 가능한 객체 구현
+1. Serializable 또는 EXternalizable 인터페이스를 상속을 해야 한다.
+2. 조상이 Serializable을 상속하고 있으면 자손에도 그대로 적용된다.
+3. 자손은 Serializable을 상속하고 있지만 조상은 Serializable을 상속하고 있지 않으면 자손에서만 직렬화가 일어난다.
+4. non-static, non-transient 멤버 변수들만 직렬화 대상이 된다.
+5. 직렬화의 대상이 되는 멤버 변수가 참조형일 때는 참조하는 객체도 직렬화 가능한 객체여야 한다. 그렇지 않으면 실행 시 NotSerializableException이 발생된다.
+
+java.net 패키지 -> 네트워크 프로그래밍 관련 API 들이 모여 있다.
+                TCP 소켓프로그래밍, UDP 소켓프로그래밍
+                웹 서버에 접속하여 컨텐츠를 요청하고 읽어오는 프로그래밍 ---> URL 클래스
+URL --> Uniform Resource Locator
+        어떠한 자원의 위치를 알리는 단일화된 형식의 문자열
+        HTTP URL --> HTTP 프로토콜 기반으로 서비스하는 서버 자원의 주소 문자열
+
+                http://서버도메인(서버IP주소)[:포트번호]/패스/파일  
+                                                      ---------- URI
+
+http://www.kma.go.kr/wid/queryDFSRSS.jsp?zone=1171062000
+                                        -----------------쿼리 문자열
+"http://openapi.seoul.go.kr:8088/796143536a756e69313134667752417a/xml/LampScpgmtb/1/100/"
+
+## day15
+
+csv
+json0
+
+xml
+    객체생성식{
+        클래스의 바디
+    }
+    
+    class 클래스명 extends 부모클래스명 implements 부모인터페이스명 {
+        클래스의 바디
+
+    }
+
+javac
+java
+javap
+jar
+
+CGI(Common Gateway Interface)
+    모든 웹서버(HTTP 서버)가 지원하는 웹 표준 기술
+    구현 언어에 의존적이지 않다.
+    멀티 프로세스로 웹 클라이언트 요청을 다중 처리한다.
+
+---> Servlet
+    Java 프로그래밍 기술
+    멀티 스레드로 웹 클라이언트 요청을 다중 처리한다.
+
+(1) 추가스레드로 수행할 기능은 무엇인가?
+(2) 추가스레드를 몇개까지 기동시킬 건가?
+
+    --> 기동시키려는 스레드의 기능에 따라 스레드 클래스를 생성한다.
+
+        - java.lang.Thread를 상속하고 run() 메서드를 오버라이딩하여 스레드 기능 구현
+        - java.lang.Runable을 추가 상속하고 run() 메서드를 오버라이딩하여 스레드 기능 구현
+
+    --> MyThread1 my = new MyThread();
+        my.start();
+
+        MyThread2 my = new MyThread2();
+        Thread t = new Thread(my2);
+        t.start()
+
+## day16
+    daemon thread --> 다른 스래드들의 기능을 서포트하는 역할 
+                    모든 스레드가 종료되면 자동으로 종료되는 스레드
+                    무한루프 
+                    스레드를 객체 생성한 후, start()를 호출하기 전에 setDaemon() 이라는 메서드로 데몬 스레드로 만든다.
+    daemon process(서비스) --> 백그라운드에서 수행되는 프로세스로서 다른 프로세스들의 실행을 서포트하는 역할
+
+    Vector --> ArrayList --> Collections.synchronizedList(...)
+    old         new
+
+    StringBuffer StringBuilder
+
+    함수형프로그래밍 ---> 아규먼트로 함수를 전달하여 좀더 적용성 있는 프로그램을 개발할 수 있다. (파이썬,자바스크립트,R) ...
+    함수형 인터페이스, 람다식, 스트림(데이터열)
+
+    DB - mySQL
+
+    CRUD : Create Read Update Delete
+           삽입   읽기  수정   삭제
+           INSERT SELECT UPDATE DELETE ---> DML
+           -------------------------------게시판, 공지사항, 방명록
+
+    select 컬러명
+    form 테이브명;
+
+    select 컬러명리스트
+    from 테이블명
+    where 꺼내고싶은행에대조건식;
+
+    select *
+    from 테이블명
+    order by 정렬기준컬럼1 asc, 정렬기준컬럼2 asc;
+
+    select *
+    from 테이블명
+    order by 정렬기준컬럼1 desc, 정렬기준컬럼2 desc;
+
+    select 컬럼명리스트
+    from 테이블명
+    where 꺼내고 싶은 조건식;
+    order by 정렬기준컬럼 desc;
+
+    where month = 1 or month = 5 or month = 4 or month = 10
+    where month not in(1,5,4,10)
+    where month not in(1,5,4,10)
+
+    select * from emp where ename like 'A%'; 
+
+
+    where ename like 'A%'
+    where ename like '%A%';  : A시작, A포함하는, A끝 
+    where ename like 'A__'
+    where ename like '_A_'
+    select ename,sal from emp;
+    
+    select ename 직원이름, sal * 12 as 연봉 from emp; /* as는 생략 가능
+    as는 새로운 컬럼명 지정
+    
+    select ename "직원 이름", sal * 12 as 연봉 from emp;
+    컬럼에 공백을 넣고 싶으면 ""
+
+    select ename, sal from emp order by sal;
+    ASC(오름차순)는 디폴트 값이므로 생략 가능 
+ 
+    select ename, sal from emp order by sal desc;
+
+    select ename, sal, hiredate from emp where sal >= 2500 order by sal desc, ename desc;
+    order by는 첫번째 기준이 똑같으면 두번째 기준
+
+    select all job from emp;
+    all는 생략가능
+    
+    select distinct job from emp;
+    distinct는 중복값 제거
+
+    select distinct job, deptno from emp;
+    job, deptno 둘 다 동일하면 제거
+
+    select * from emp order by sal desc limit 3;
+    sal 내림차순 -> 3개만 출력
+ 
