@@ -312,7 +312,7 @@ CGI(Common Gateway Interface)
            삽입   읽기  수정   삭제
            INSERT SELECT UPDATE DELETE ---> DML
            -------------------------------게시판, 공지사항, 방명록
-
+``` MySQL
     select 컬러명
     form 테이브명;
 
@@ -347,28 +347,36 @@ CGI(Common Gateway Interface)
     select ename,sal from emp;
     
     select ename 직원이름, sal * 12 as 연봉 from emp; /* as는 생략 가능
-    as는 새로운 컬럼명 지정
+    as는 새로운 컬럼명 지정 */
     
     select ename "직원 이름", sal * 12 as 연봉 from emp;
-    컬럼에 공백을 넣고 싶으면 ""
+    -- 컬럼에 공백을 넣고 싶으면 ""
 
     select ename, sal from emp order by sal;
-    ASC(오름차순)는 디폴트 값이므로 생략 가능 
+    -- ASC(오름차순)는 디폴트 값이므로 생략 가능 
  
     select ename, sal from emp order by sal desc;
 
     select ename, sal, hiredate from emp where sal >= 2500 order by sal desc, ename desc;
-    order by는 첫번째 기준이 똑같으면 두번째 기준
+    -- order by는 첫번째 기준이 똑같으면 두번째 기준
 
     select all job from emp;
-    all는 생략가능
+    -- all는 생략가능
     
     select distinct job from emp;
-    distinct는 중복값 제거
+    -- distinct는 중복값 제거
 
     select distinct job, deptno from emp;
-    job, deptno 둘 다 동일하면 제거
+    -- job, deptno 둘 다 동일하면 제거
 
     select * from emp order by sal desc limit 3;
-    sal 내림차순 -> 3개만 출력
- 
+    -- sal 내림차순 -> 3개만 출력
+```
+## day17
+
+MySQL 내장 함수
+숫자 관련 함수
+
+dummy table = dual 특정 데이터에서 함수를 꺼내는 것
+
+## day18
