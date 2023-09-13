@@ -380,3 +380,15 @@ MySQL 내장 함수
 dummy table = dual 특정 데이터에서 함수를 꺼내는 것
 
 ## day18
+
+* SET Operator
+    * UNION - 합집합
+    * UNION ALL - 합집합(중복 결과 모두 표현)
+    * INTERSECT - 교집합
+    * MINUS - 차집합
+* ROLLUP - 총합 또는 중간 합계가 필요할 경우 사용
+* JOIN
+    * INNER - 조건 일치하는 행들만 저장
+    * OUTER - 조건 일치하지 않는 행들도 저장
+    * CROSS - ex. 4행 * 3행 = 총 12행 결과값 
+
