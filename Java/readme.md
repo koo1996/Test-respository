@@ -392,3 +392,20 @@ dummy table = dual 특정 데이터에서 함수를 꺼내는 것
     * OUTER - 조건 일치하지 않는 행들도 저장
     * CROSS - ex. 4행 * 3행 = 총 12행 결과값 
 
+## day19
+
+## day20 
+
+executeQuery() --> SELECT -----> ResultSet, 비어있는 ResultSet 객체
+executeUpdate() --> SELECT외의 SQL명령들 --> int(변경된 행의 갯수)
+
+Java Application -> JVM에 의해 단독으로 수행되는 프로그램
+Java Android App -> 안드로이드 운영체제에서 실행되는 심플한 프로그램
+Java Servlet -> 웹 서버에서 수행되는 자바 프로그램(MVC)
+
+MVC(Model View Controller)
+
+프로그램을 개발할 때 역할을 나눠서 개발하는 패턴
+Model --> Domain Model & Service Model(xxxDTO, xxxVO & Servie Model(xxxDAO))
+View --> 사용자(user)와의 인터페이스(입출력) --> JSP, Thymeleaf, Vue.js
+Controller --> Model 과 View 사이에서 여러 다양한 역할을 담당하는 객체(비지니스로직) --> Servlet
