@@ -409,3 +409,38 @@ MVC(Model View Controller)
 Model --> Domain Model & Service Model(xxxDTO, xxxVO & Servie Model(xxxDAO))
 View --> 사용자(user)와의 인터페이스(입출력) --> JSP, Thymeleaf, Vue.js
 Controller --> Model 과 View 사이에서 여러 다양한 역할을 담당하는 객체(비지니스로직) --> Servlet
+
+## day21
+
+* 자바 기반의 웹프로그래밍
+
+- Servlet, JSP --> 웹서버에서 실행
+
+웹클라이언트(브라우저) --------> 웹서버
+                     요청(http) / 백엔드 개발자
+                    <--------- 
+                     응답(http)
+                     HTML, CSS, JavaScript --> 웹클라이언트 기술 / 프론트엔드 개발자
+                    
+AJAX
+HTML
+<hr> <hr/> : 분리선 
+
+- 컨텐트의 존재 여부
+double side tag  <시작태그명>xxxxxxxx</종료태그명>
+single side tag(empty tag)  <태그명>, <태그명/>
+
+- 랜더링 방식
+블럭스타일 태그     랜더링될때 그 행 끝까지 이 태그의 공간(println)
+인라인스타일 태그   랜더링될때 출력되는 컨텐트 만큼만 이 태그의 공간(print) img,a
+
+```html
+<br> : \n 
+<img src="http://localhost:8088/edu/images/olaf.jpg"> : 절대 url
+<a> : 하이퍼링크 텍스트
+<ol></ol> : 순서가 있는 리스트
+<ul></ul> : 순서가 없는 리스트
+&nbsp; : 띄어쓰기, &lt; &gt; &amp;
+
+<fieldset></fieldset> : 박스로 테두리 표시
+```
