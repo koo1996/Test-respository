@@ -444,3 +444,49 @@ single side tag(empty tag)  <태그명>, <태그명/>
 
 <fieldset></fieldset> : 박스로 테두리 표시
 ```
+
+## day22
+
+```html
+<style>
+    CSS선택자 {
+        속성명:속성값;
+        속성명:속성값;
+        속성명:속성값;
+        color:green;
+        font-weight:bold;
+        background-color:yellow;
+    }
+</style>
+
+1) 태그선택자 : 태그명 / 태그명, 태그명, 태그명
+2) id 선택자 : 태그에 정의된 id 속성의 값(id 속성 : HTML 문서 내에서 값이 유일해야 한다.)
+        #id속성값
+3) class 선택자 : 태그에 정의된 class 속성의 값(class 속성 : HTML 문서 내에서 값을 중복정의 가능하다.)
+        .class속성값
+4) 전체 선택자 : 모든 태그
+        *
+5) 자식 선택자 : 부모태그명 > 자식태그명
+            p > h1
+            p > h1 > span
+
+       
+            
+            <>21
+margin : 20px : 상하좌우 전부 20px
+margin : 10px 20px 30px 40px : 상 우 하 좌
+margin : 10px 20px : 상하 10px 좌우 20px
+margin : 10px 20px 30px : 상하 10 좌 20 우 30
+
+
+h2:(shadow class)nth-of-type(?) : ?번째 h2 태그에 적용
+
+a:hover {
+
+}
+a영역에 마우스를 올리면~
+
+
+clear : both
+<link rel="stylesheet"  href="mystyle.css"> : css 따라 작성
+```
