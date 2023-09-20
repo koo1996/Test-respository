@@ -490,3 +490,29 @@ a영역에 마우스를 올리면~
 clear : both
 <link rel="stylesheet"  href="mystyle.css"> : css 따라 작성
 ```
+## day23
+
+* document, window --> 내장객체, 객체 상태로 제공되는 API - BOM(Browser Oject Model) location, screen, history, navigator
+
+* Math --> 생성자함수, 모든 멤버가 정적(static)
+* Array, Date --> 생성자 함수, 객체 생성해서 사용
+                new Array(), new Date()
+[ &&, ||]
+
+식1 && 식2
+||
+
+조건식 && 일반식
+
+[let 으로 변수를 선언하면 얻게되는 장점]
+
+(1) 동일한 명칭으로 변수를 두 번 이상 선언할 수 없다.
+(2) 블록스코프를 지원한다.
+
+- 변수의 스코프
+    * 전역변수 스코프 - 함수 밖에 선언이후 모든 <script> 태그영역에서 사용 가능(var, let)
+    * 지역변수 스코프 - 함수 안에 선언되는 변수로서 함수 수행이 종료되면 메모리 영역이 해제
+    * 블록변수 스코프 - 특정 블록(if, for, while)에 선언 변수로서 블록이 종료되면 메모리 영역이 해제(let)
+
+## day24
+## day25
