@@ -516,3 +516,63 @@ clear : both
 
 ## day24
 ## day25
+
+* JavaScript의 객체 정의와 활용
+     * 객체 리터럴을 사용하는 방법
+     ```javascript
+     {
+        속성명:속성값, 속성명:속성값,...
+     }
+     ```
+
+     * 생성자 함수를 사용하는 방법
+    생성자 함수란 객체를 초기화하기 위해 사용되는 함수로서 관례적으로 생성자 함수의 명칭은 첫 글자를 대문자로 사용한다.
+    ```javascript
+    function 함수명([매개변수]){
+        this.속성명=값;
+        this.속성명=값;
+    }
+
+    new 함수명()
+
+    ```
+    * filter
+    return 값은 boolean
+
+    * BOM(Browser Object Model) : 브라우저에서 실행되는 자바스크립트를 위해 브라우저가 제공하는 객체 window, document, location, navigator, screen, history
+
+    window : 전역객체(global), 브라우저 자신 
+             다른 BOM 객체들은 window 객체의 속성으로 정의된다.
+             전역객체로서 멤버 사용시 객체명을 생략할 수 있음
+             전역 코드영역에서의 this 는 window 객체를 참조한다.
+             alert(), prompt(), confirm(), setInterval() - clearInterval(), setTimeout() - clearTimeout(), open()
+    document : 브라우저의 도큐먼트 영역과 관련된 기능을 제공하는 객체
+               write(), writeln()
+               getElEmentsByTagName(태그명)
+               getElementById(id속성값)
+               getElementByClassName(class속성값)
+               querySelector(CSS선택자)
+               querySelectorAll(CSS선택자)
+    location : 랜더링된 웹 페이지의 주소 문자열(URL) 정보를 담고 있는 객체
+             href, reload()
+    웹 페이지에서 어떠한 액션(이벤트)이 발생했을 때 수행되는 코드를 작성하여 등록하는 방법
+    - 인라인 이벤트 모델 : 지역적
+    - 고전 이벤트 모델 : 전역적
+    - 표준 이벤트 모델 : 전역적
+
+    이벤트 타입 : 발생되는 이벤트의 종류(click, mouseover, load, keydown, keyup, change, submit)
+    이벤트 타켓 : 이벤트가 발생한 대상 DOM 객체
+    이벤트 핸들러(리스너) : 이벤트 처리 코드를 구현한 함수
+    //인라인
+        이벤트 핸들러 : abc()
+    <태그명 onxxx = "abc(); ">
+    
+    //고전
+    let dom = doucument.querySelector("#target);
+    dom.onxxx = abc;
+    dom.onxxx = null;
+    
+    //표준 
+    let dom = doucument.querySelector("#target);
+    dom.addEventListener("xxx",abc);
+    dom.removeEventListener("xxx",abc);
