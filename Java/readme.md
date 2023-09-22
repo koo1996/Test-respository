@@ -576,3 +576,20 @@ clear : both
     let dom = doucument.querySelector("#target);
     dom.addEventListener("xxx",abc);
     dom.removeEventListener("xxx",abc);
+
+## day26 
+JavaScript storage.exam5 - 
+
+innerHTML
+innerText 
+live preview
+
+## day27 
+JSON
+
+[Web Server Programming(Backend Programming)]
+
+(1) Servlet
+(2) JSP
+(3) MVC 패텁(Servlet&LP
+(4) Spring MVC - Framework
