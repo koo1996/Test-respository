@@ -589,7 +589,7 @@ JSON
 
 [Web Server Programming(Backend Programming)]
 
-(1) Servlet
-(2) JSP
-(3) MVC 패텁(Servlet&LP
-(4) Spring MVC - Framework
+	1) Servlet
+	2) JSP
+	3) MVC 패텁(Servlet&LP
+	4) Spring MVC - Framework
