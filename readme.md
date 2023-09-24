@@ -7,6 +7,14 @@
 * 빅오 표기법
 ```
 O(1) > O(logN) > O(N) > O(NlogN) > O(N^2) > O(N^3) > O(2^n)
+```
+
+* 유용한 vs code 확장 프로그램
+  * JavaScript (ES6) code snippets : 코드 블록 자동 완성
+  * HTML snippets
+  * ESLint : 자바스크립트 문법의 오류를 찾아주는 확장프로그램
+  * Prettier - Code formatter
+  * Live Server : HTML 파일을 바로 웹 서버에서 실행할 수 있도록 해주는 확장프로그램
 
 시간제한이 1초인 문제를 만났을 때 일반적인 기준
 N의 범위가 500인 경우 : 시간 복잡도가 O(N^3)
