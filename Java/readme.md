@@ -593,3 +593,35 @@ JSON
 	2) JSP
 	3) MVC 패텁(Servlet&LP
 	4) Spring MVC - Framework
+
+edu -------------> 이클립스 : 웹 프로젝트
+                    톰캣(WAS) : 컨텍스트
+                    개발자 : 웹 애플리케이션
+
+MIME 타입 - 전달된 메시지(컨텐트)의 타입, major type/minor type
+            text/html, text/xml, text/plain, text/json(application/json)
+            image/gif, image/jpg, image/png
+
+CGI(Common Gateway Interface)
+- 구현언어가 정해져 있지 않다.
+- HTTP 표준
+- API가 거의 없다. -> 개발자의 코딩량이 많아진다.
+- 여러 클라이언트 요청에 대해 다중 프로세스로 서비스하므로 동시 요청수가 많을 수록 엄청 비효율적이다. 
+
+CGI ------------> Fast CGI -----------> Servlet (다중스레드)
+                                        -------------------> JSP
+                                        -------------------> MVC 패턴(모델 2)
+                                                            요청 : Servlet
+                                                            응답 : JSP
+    ------------> ASP, PHP
+
+웹 컨테이너(서블릿컨테이너, 서블릿엔진) - 카탈리나
+--> 클라이언트로 부터 서블릿이 요청되면 
+    (1) 요청된 서블릿 객체가 이미 생성되어 있는지?
+        Y -> service() 호출 -> 요청 방식에 따라서 doGet() 또는 doPost() 호출
+        N -> 서블릿 객체를 생성 -> init() 호출 -> service() 호출
+        -> 요청 방식에 따라서 doGet() 또는 doPost() 호출
+
+        서블릿 객체가 삭제(서버가 종료될 때, 자동 리로드될 때) -> destory()
+
+## day28
