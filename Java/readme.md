@@ -636,36 +636,40 @@ CGI ------------> Fast CGI -----------> Servlet (다중스레드)
 
 ## day29
 JSP(JavaServer Pages)
-    * 서블릿으로 구현할 수 있는 모든 기능을 JSP로도 구현 가능
-    * 서블릿에 비해 구현하기 쉽다는 평가
-    * HTML 태그, JSP 태그, JSP 내장객체, 약간의 자바 코드
-    * 수행되기 전에 Servlet 소스로 변경되어 수행되므로 서블릿의 수행상의 장점이 그대로 지원됨
+
+* 서블릿으로 구현할 수 있는 모든 기능을 JSP로도 구현 가능
+* 서블릿에 비해 구현하기 쉽다는 평가
+* HTML 태그, JSP 태그, JSP 내장객체, 약간의 자바 코드
+* 수행되기 전에 Servlet 소스로 변경되어 수행되므로 서블릿의 수행상의 장점이 그대로 지원됨
         ----------> JSP Converter(JSP 엔진) : Jasper
-    * JSP 태그
-        * JSP 내장 객체
-        * EL, JSTL
-        <%           %> : 스크립트릿(수행문) 태그 
+* JSP 태그
+* JSP 내장 객체
+* EL, JSTL
+        ```java
+	<%           %> : 스크립트릿(수행문) 태그 
         <%!          %> : 선언문(변수선언, 메서드정의) 태그 <%=         %> : 표현식
         <%--        --%> : 주석문 태그
         <%@         %> : 지시자 태그
-![Alt text](image-1.png)
 
-client 실행 : java
-server 실행 : jsp
-trimDirectiveWhitespaces="true"%
-선언문 태그 빈행으로 실행
 
-<%@ page [ language="java" ]  
-[ extends="package.class" ]  
-[ import="{package.class | package.*}, ..." ]  
-[ session="true|false" ]  
-[ buffer="none|8kb|sizekb" ]  
-[ autoFlush="true|false" ]  
-[ isThreadSafe="true|false" ]  
-[ info="text" ]  
-[ errorPage="relativeURL" ]  
-[ contentType="mimeType [ ; charset=characterSet ]" |         
-"text/html ; charset=ISO-8859-1" ]  
-[ isErrorPage="true|false" ] 
-[ pageEncoding="characterSet | ISO-8859-1" ]  
-[ isELIgnored="true|false"] 
+	client 실행 : java
+	server 실행 : jsp
+	trimDirectiveWhitespaces="true"%
+
+	선언문 태그 빈행으로 실행
+
+	<%@ page [ language="java" ]  
+	[ extends="package.class" ]  
+	[ import="{package.class | package.*}, ..." ]  
+	[ session="true|false" ]  
+	[ buffer="none|8kb|sizekb" ]  
+	[ autoFlush="true|false" ]  
+	[ isThreadSafe="true|false" ]  
+	[ info="text" ]  
+	[ errorPage="relativeURL" ]  
+	[ contentType="mimeType [ ; charset=characterSet ]" |         
+	"text/html ; charset=ISO-8859-1" ]  
+	[ isErrorPage="true|false" ] 
+	[ pageEncoding="characterSet | ISO-8859-1" ]  
+	[ isELIgnored="true|false"] 
+	```
