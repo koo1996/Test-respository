@@ -625,3 +625,47 @@ CGI ------------> Fast CGI -----------> Servlet (다중스레드)
         서블릿 객체가 삭제(서버가 종료될 때, 자동 리로드될 때) -> destory()
 
 ## day28
+
+* 요청 재지정
+    * 요청재지정이란 클라이언트에서 요청한 페이지 대신 다른 페이지를 클라이언트가 보게 되는 기능으로서 redirect 방법과 forward 방법으로 나뉜다.
+        * redirect : HttpServletResponse 의 sendRedirect() 메서드를 사용한다. 
+        * forward : RequestDispatcher 의 forward() 메서드를 사용한다. 
+        * RequestDispatcher
+            * forward() : 요청 페이지 대신 다른 페이지가 대신 응답하게 한다. 
+            * include() : 요청 페이지 안에 다른 페이지의 처리 내용이 포함되어 같이 응답하게 된다.
+
+## day29
+JSP(JavaServer Pages)
+    * 서블릿으로 구현할 수 있는 모든 기능을 JSP로도 구현 가능
+    * 서블릿에 비해 구현하기 쉽다는 평가
+    * HTML 태그, JSP 태그, JSP 내장객체, 약간의 자바 코드
+    * 수행되기 전에 Servlet 소스로 변경되어 수행되므로 서블릿의 수행상의 장점이 그대로 지원됨
+        ----------> JSP Converter(JSP 엔진) : Jasper
+    * JSP 태그
+        * JSP 내장 객체
+        * EL, JSTL
+        <%           %> : 스크립트릿(수행문) 태그 
+        <%!          %> : 선언문(변수선언, 메서드정의) 태그 <%=         %> : 표현식
+        <%--        --%> : 주석문 태그
+        <%@         %> : 지시자 태그
+![Alt text](image-1.png)
+
+client 실행 : java
+server 실행 : jsp
+trimDirectiveWhitespaces="true"%
+선언문 태그 빈행으로 실행
+
+<%@ page [ language="java" ]  
+[ extends="package.class" ]  
+[ import="{package.class | package.*}, ..." ]  
+[ session="true|false" ]  
+[ buffer="none|8kb|sizekb" ]  
+[ autoFlush="true|false" ]  
+[ isThreadSafe="true|false" ]  
+[ info="text" ]  
+[ errorPage="relativeURL" ]  
+[ contentType="mimeType [ ; charset=characterSet ]" |         
+"text/html ; charset=ISO-8859-1" ]  
+[ isErrorPage="true|false" ] 
+[ pageEncoding="characterSet | ISO-8859-1" ]  
+[ isELIgnored="true|false"] 
