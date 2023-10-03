@@ -673,3 +673,41 @@ JSP(JavaServer Pages)
 	[ pageEncoding="characterSet | ISO-8859-1" ]  
 	[ isELIgnored="true|false"] 
 	```
+## day30
+
+* HTTPSession : 객체 공유 -> session 직접 추출하여 setattribute
+* ServletContext : 서버 종료시 사라진다. 
+* HttpSession 객체에 cart 라는 명칭으로 저장된 객체의 getApple() 을 호출하여 리턴된 결과를  표현하려면 다 음과 같이 구현한다. 
+ ```java
+ ${ sessionScope.cart.apple } 또는 ${ cart.apple } 
+ ```
+- EL 에서의 . 연산자   
+     변수명.xxx 
+ (1) 변수의 참조 대상이 일반 Java 객체이면  getXxx() 를 호출한 결과가 된다. 
+ (2) 변수의 참조 대상이 Map 객체이면 get(“xxx”) 을 호출한 결과가 된다.
+
+ ### mvc
+
+ JSP(스크립팅방식)
+ JSP+자바클래스(자바빈) --> 모델1
+ Servlett+JSP+자바클래스(자바빈) --> 모델2(MVC)
+ C         V        M
+
+Web Server(HTTP Server) + Application Server
+------------------------------------------
+Web Application Server(WAS) --> Tomcat
+
+JSTL - JSP 커스텀태그의 표준 
+       코어라이브러리, 포매팅라이브러리, XML라이브러리, SQL라이브러리
+
+### XML(Extensible Markup Language)
+
+* 반드시 맨 앞에 명세, XML 문서 유형을 지정 
+* XML 문서 구조를 정의한 DTD(또는 XML Schema) 선언, 스타일을 정의한 CSS 연결 에 대한 선언도 명세
+
+### JSON
+JavaScript Object Notation : 인터넷에서 자료를 주고 받을 때 그 자료를 표현하는 방법이다. 자료의 종류에 큰 제한은 없으며, 특히 컴퓨터 프로그램의 변수값을 표현하는 데 적합하다. 형식은 자바스크립트의 구문 형식을 따르지만, 프로그래밍 언어나 플랫폼에 독립적이므로 C, C++, C#, 자바, 자바스크립트, 펄, 파이썬 등 많은 언어에서 이용할 수 있다.
+
+(1) XMLHttpRequest 객체
+(2) fetch() 함수를 이용하는 방법
+(3) axios 추가 라이브러리를 이용하는 방법
