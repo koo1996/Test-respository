@@ -711,3 +711,12 @@ JavaScript Object Notation : 인터넷에서 자료를 주고 받을 때 그 자
 (1) XMLHttpRequest 객체
 (2) fetch() 함수를 이용하는 방법
 (3) axios 추가 라이브러리를 이용하는 방법
+
+## day31
+
+AJAX 
+* XMLHttpRequest 객체 : 서버 측과의 비동기 통신을 제어하는 것은 XMLHttpRequest 객체의 역할이다. 
+* XMLHttpRequest 객체를 이용함으로써 지금까지 브라우저가 실행해 온 서버와의 통신 부분을 JavaScript가 제어할 수 있게 된다. 
+* XMLHttpRequest  객체 생성 :  new XMLHttpRequest()
+
+* Same Origin Policy(SOP) : 브라우저에서 보안상의 이슈로동일 사이트의자원(Resource)만접근해야 한다는 제약이다
