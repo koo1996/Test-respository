@@ -720,3 +720,15 @@ AJAX
 * XMLHttpRequest  객체 생성 :  new XMLHttpRequest()
 
 * Same Origin Policy(SOP) : 브라우저에서 보안상의 이슈로동일 사이트의자원(Resource)만접근해야 한다는 제약이다
+
+## day32
+
+ServletJSP : Filter 
+
+Filter : 웹 클라이언트에서 요청한 웹 자원들(Servlet 또는 JSP)이 수행되기 전 또는 후에 수행되는 객체로 서 request 또는 response에 영향을 주거나 또는 특정 처리를 할 수 있다. Filter의 응용 예로 인증, 로깅, 이미 지 변환, 데이터 압축, 암호화, 스트림 토큰화, XML 변환 등이 있다.
+
+Filter 구현 시에는 javax.servlet.Filter 라는 인터페이스를 상속하여 init(), doFilter(), destroy() 를 오버라이딩 한다.
+
+lambdastream
+
+람다 스트림
