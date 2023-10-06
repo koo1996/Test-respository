@@ -732,3 +732,35 @@ Filter 구현 시에는 javax.servlet.Filter 라는 인터페이스를 상속하
 lambdastream
 
 람다 스트림
+
+## day33
+
+스프링부트
+springboot
+
+"스프링 프레임워크"는 자바 기반의 애플리케이션 프레임워크로 엔터프라이즈급 애플리케이션을 개발하기 위한 다양한 기능을 제공한다.
+
+spring ioc 제어역전(IoC)
+
+* 의존성 주입(DI)
+* DL
+
+
+* 관점지향프로그래밍(AOP)
+
+스프링 프레임워크의 모듈
+
+* spring ioc
+
+DI의 예
+
+1. Construction Injection : 생성자를 통해서 객체 바인딩(의존관계를 연결)     
+2. Setter Injection : setter 메서드를 이용해서 객체 바인딩(의존관계를 연결)     
+3. method Injection : 어노테이션을 정의한 메서드를 이용해서 객체 바인딩(의존관계를 연결)     
+4. field Injection : 어노테이션을 정의한 메서드를 이용해서 객체 바인딩(의존관계를 연결) 
+
+[ ANNOTATION 설정 ] 
+
+@Component 클래스에 선언하며 해당 클래스를 bean 객체로 등록한다. bean의 이름은 해당 클래스명(첫 글자는 소문자로 변경해서)이 사용된다. 범위는 디폴트로 singleton이며 @Scope를 사용하여 지정할 수 있다. 
+
+@Scope 스프링은 기본적으로 빈의 범위를 "singleton" 으로 설정한다. "singleton" 이 아닌 다른 범위를 지 정하고 싶다면 @Scope 어노테이션을 이용하여 범위를 지정한다. 설정 : prototype, singleton, request, session, globalSession
