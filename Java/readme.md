@@ -764,3 +764,16 @@ DI의 예
 @Component 클래스에 선언하며 해당 클래스를 bean 객체로 등록한다. bean의 이름은 해당 클래스명(첫 글자는 소문자로 변경해서)이 사용된다. 범위는 디폴트로 singleton이며 @Scope를 사용하여 지정할 수 있다. 
 
 @Scope 스프링은 기본적으로 빈의 범위를 "singleton" 으로 설정한다. "singleton" 이 아닌 다른 범위를 지 정하고 싶다면 @Scope 어노테이션을 이용하여 범위를 지정한다. 설정 : prototype, singleton, request, session, globalSession
+
+## day34
+
+스프링 mvc
+
+컨트롤러 메서드의 리턴값
+(1) String - 뷰이름 ---> templates/뷰이름.html
+(2) ModelAndView - 뷰에게전달한데이터 + 뷰이름 ---> templates/뷰이름.html
+(3) void - 뷰이름으로 매핑명을 사용 ---> 매핑명.html
+
+Thymeleaf
+
+
