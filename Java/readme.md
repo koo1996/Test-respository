@@ -776,4 +776,69 @@ DI의 예
 
 Thymeleaf
 
+## day35
+
+queryForm - Query DTO
+
+memberForm
+
+@RequestParam() => required = true : 무조건 입력
+defaultValue는 기본값 설정
+
+[ Lombok이란 ]
+
+- Java의 확장 라이브러리이다. 
+- 반복해서 구현하게 되는 메소드를 Annotation을 사용해서 자동으로 작성해주는 
+  라이브러리다.
+
+- 주요 Annotation
+
+@NonNull 
+  null을 허용하지 않는 매개변수 정의
+
+@Getter, @Setter
+  getter, setter를 생성한다.
+
+@ToString
+  ToString 메소드를 생성한다.
+
+@EqualsAndHashCode
+  hashCode, equals를 구현한다.
+
+@NoArgsConstructor
+  매개변수가 없는 생성자 구현한다.
+
+@RequiredArgsConstructor
+  final, @NonNull이 있는 필드에 값을 초기화 하는 생성자를 구현한다.
+
+@AllArgsConstructor
+  모든 필드에 값을 초기화 하는 생성자를 구현한다.
+
+@Data
+  다음에 제시된 모든 Annotation 을 정의한 것과 동일한다.
+  @ToString, 
+  @EqualsAndHashCode
+  @Getter on all fields,
+  @Setter on all non-final fields,
+  @RequiredArgsConstructor!
+
+  DTO : 변경 가능 - getter setter  --> HttpServletRequest 보관
+  VO : 변경? - getter만
+```html
+<li><span th:inline="none">[[...]] = </span>[[${data}]]</li>
+th:text //controlloer -> 태그가 있으면 형식 그대로 출력
+  
+th:utext //태그 x 출력
+<li><span th:inline="none">[(...)] = </span>[(${data})]</li>
+
+<h3 th:text="'시청 불가'" th:if="${age lt 14}"></h3> //참이면 출력 (자식태그도 출력 x)
+<h3 th:text="'시청 가능'" th:unless="${age lt 14}"></h3> //거짓이면 출력
+
+
+<th:block th:if="${today == '금요일'}">
+    <h2>즐거운 금요일</h2>
+    <h3>행복한 금요일</h3>
+</th:block></body>  //블럭으로 태그내용을 묶을 수 있다.
+
+```
 
