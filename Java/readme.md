@@ -842,3 +842,35 @@ th:utext //태그 x 출력
 
 ```
 
+## day36
+
+Thymeleaf
+
+* SpringEL
+    * Spring Expression Language라는 뜻의 SpringEL (SpEL)은 런타임 시 메서드 호출 및 기본 문자열 템플릿 등의 기능을 제공한다.
+    * ${...} 표현식을 이용해 컨트롤러에서 전달받은 변수에 접근할 수 있으며 th:속성명 그리고 [[ ]] 안에서 사용 가능하다.
+    * 표현식
+        1) ${...} 표현식 – 변수 표현식
+            * ${...} 표현식을 이용해 컨트롤러에서 전달받은 변수에 접근할 수 있으며 th:속성명 그리고 [[ ]] 안에서 사용 가능하다.
+        2) @{...} 표현식 – URL 표현식
+            * @{...} 표현식은 서버의 contextPath를 반영한 URI 로 변경된다. 
+        3) 문자 합치기
+            * 합치고 싶은 문자열을 "|" 으로 감싸거나 + 연산자를 이용해 문자를 합칠 수 있다.
+        4) 비교 연산자 
+            ```html
+            <!-- 이항 연산자 -->    <div th:text="${info.name != 'kim'}"></div>    <div th:text="${info.age >= 30}"></div> 
+            <!-- 삼항 연산자 -->     <div th:text="${info.name == 'kim' ? 'ok' : 'no'}"></div> 
+            ```
+        5) HTML 태그의 컨텐츠 설정 - th:text 
+        6) HTML 태그의 value 속성의 값 설정 - th:value
+        7) th:if, th:unless
+            * if~else 구문과 비슷하다. 조건을 체크하여 참이면<th:if> 그리고 거짓이면<th:unless> 컨텐츠를 표현한다.
+        8) th:switch, th:case
+            * switch 구문과 비슷하다. th:case 속성에 지정된 값과 동일한 서브 태그를 표현한다.
+        9) th:each
+            * for 반복문과 비슷하다
+        10) 링크될 대상 URL : th:href="@{}" 
+        11) th:with="${}"
+            * <div th:with=”userId=${number}” th:text=”${usesrId}”>
+            * 변수형태의 값을 재정의하는 속성이다. th:with를 이용하여 새로운 변수 값을 생성할 수 있다.
+
