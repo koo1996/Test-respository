@@ -874,3 +874,17 @@ Thymeleaf
             * <div th:with=”userId=${number}” th:text=”${usesrId}”>
             * 변수형태의 값을 재정의하는 속성이다. th:with를 이용하여 새로운 변수 값을 생성할 수 있다.
 
+## day37 
+
+ModelAttribute - 같이 실행 requestscope 보관도 해준다.
+
+@SessionAttributes({"count1", "count2"}) : 배열 형식으로 저장한다.
+
+s.setcomplete(); : 전체 삭제
+s.removeAttribute(who); : 부분 삭제
+
+public String memberHandle(@ModelAttribute("kkk") StepVO vo) : 다른 이름으로 저장
+
+@ResponseBody 어노테이션 적용 : @ResponseBody 어노테이션이 적용된 경우, 리턴 객체를 http응답으로 전송한다.
+HttpMessageConverter를 이용해서 객체를 HTTP 응답스트림으로 변환한다.
+
