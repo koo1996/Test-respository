@@ -888,3 +888,46 @@ public String memberHandle(@ModelAttribute("kkk") StepVO vo) : 다른 이름으�
 @ResponseBody 어노테이션 적용 : @ResponseBody 어노테이션이 적용된 경우, 리턴 객체를 http응답으로 전송한다.
 HttpMessageConverter를 이용해서 객체를 HTTP 응답스트림으로 변환한다.
 
+## day38
+
+[ HTTP ]
+
+- 요청(client) - 응답(server)
+- 요청 - GET : 요청헤더
+        POST : 요청헤더+요청바디(application/x-www-urlencoded)
+- 응답 - 응답헤더+ 응답바디
+
+@ResponseBody : 뷰를 통하지 않고 컨트롤러가 직접 응답 바디 구성
+@RequestBody : 요청바디를 다른 형식으로 받겠다.(JSON)
+
+import org.slf4j.Logger; -
+
+logger.error
+logger.warn
+logger.info
+logger.debug
+logger.trace
+
+form 태그에 multipart/form-data 서버에 알리고 전달한다.
+```
+xxx(MultipartFile mfile)
+xxx(MultipartFile 타입을 멤버변수로 정의한 VO클래스 vo)
+xxx(MultipartFile[] 타입을 멤버변수로 정의한 VO클래스 vo) → 다중 파일일 때
+xxx(MultipartRequest mreq)    → 다중 파일일 때 
+```
+
+MultipartFile 의 주요 메소드 
+```
+ String getName()    파라미터의 이름을 리턴한다.   
+ String getOriginalFilename()   업로드 한 파일의 실제!! 이름을 리턴한다.  boolean isEmpty()     업로드 한 파일이 존재하지 않으면 true를 리턴한다.  
+ long getSize()     업로드 한 파일의 크기를 리턴한다.  
+ byte[] getBytes() throws IOException 업로드 한 파일의 데이터를 byte 배열로 리턴다.   
+ InputStream getInputStream()  InputStrem 객체을 리턴한다.  
+ void transferTo(File dest)    업로드 한 파일 데이터를 지정한 파일에 저장한다.
+ ```
+
+upload 
+
+ <input type="file" name="uploadFiles" multiple/> : 여러 파일
+
+Mybatis
