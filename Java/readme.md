@@ -764,3 +764,170 @@ DI의 예
 @Component 클래스에 선언하며 해당 클래스를 bean 객체로 등록한다. bean의 이름은 해당 클래스명(첫 글자는 소문자로 변경해서)이 사용된다. 범위는 디폴트로 singleton이며 @Scope를 사용하여 지정할 수 있다. 
 
 @Scope 스프링은 기본적으로 빈의 범위를 "singleton" 으로 설정한다. "singleton" 이 아닌 다른 범위를 지 정하고 싶다면 @Scope 어노테이션을 이용하여 범위를 지정한다. 설정 : prototype, singleton, request, session, globalSession
+
+## day34
+
+스프링 mvc
+
+컨트롤러 메서드의 리턴값
+(1) String - 뷰이름 ---> templates/뷰이름.html
+(2) ModelAndView - 뷰에게전달한데이터 + 뷰이름 ---> templates/뷰이름.html
+(3) void - 뷰이름으로 매핑명을 사용 ---> 매핑명.html
+
+Thymeleaf
+
+## day35
+
+queryForm - Query DTO
+
+memberForm
+
+@RequestParam() => required = true : 무조건 입력
+defaultValue는 기본값 설정
+
+[ Lombok이란 ]
+
+- Java의 확장 라이브러리이다. 
+- 반복해서 구현하게 되는 메소드를 Annotation을 사용해서 자동으로 작성해주는 
+  라이브러리다.
+
+- 주요 Annotation
+
+@NonNull 
+  null을 허용하지 않는 매개변수 정의
+
+@Getter, @Setter
+  getter, setter를 생성한다.
+
+@ToString
+  ToString 메소드를 생성한다.
+
+@EqualsAndHashCode
+  hashCode, equals를 구현한다.
+
+@NoArgsConstructor
+  매개변수가 없는 생성자 구현한다.
+
+@RequiredArgsConstructor
+  final, @NonNull이 있는 필드에 값을 초기화 하는 생성자를 구현한다.
+
+@AllArgsConstructor
+  모든 필드에 값을 초기화 하는 생성자를 구현한다.
+
+@Data
+  다음에 제시된 모든 Annotation 을 정의한 것과 동일한다.
+  @ToString, 
+  @EqualsAndHashCode
+  @Getter on all fields,
+  @Setter on all non-final fields,
+  @RequiredArgsConstructor!
+
+  DTO : 변경 가능 - getter setter  --> HttpServletRequest 보관
+  VO : 변경? - getter만
+```html
+<li><span th:inline="none">[[...]] = </span>[[${data}]]</li>
+th:text //controlloer -> 태그가 있으면 형식 그대로 출력
+  
+th:utext //태그 x 출력
+<li><span th:inline="none">[(...)] = </span>[(${data})]</li>
+
+<h3 th:text="'시청 불가'" th:if="${age lt 14}"></h3> //참이면 출력 (자식태그도 출력 x)
+<h3 th:text="'시청 가능'" th:unless="${age lt 14}"></h3> //거짓이면 출력
+
+
+<th:block th:if="${today == '금요일'}">
+    <h2>즐거운 금요일</h2>
+    <h3>행복한 금요일</h3>
+</th:block></body>  //블럭으로 태그내용을 묶을 수 있다.
+
+```
+
+## day36
+
+Thymeleaf
+
+* SpringEL
+    * Spring Expression Language라는 뜻의 SpringEL (SpEL)은 런타임 시 메서드 호출 및 기본 문자열 템플릿 등의 기능을 제공한다.
+    * ${...} 표현식을 이용해 컨트롤러에서 전달받은 변수에 접근할 수 있으며 th:속성명 그리고 [[ ]] 안에서 사용 가능하다.
+    * 표현식
+        1) ${...} 표현식 – 변수 표현식
+            * ${...} 표현식을 이용해 컨트롤러에서 전달받은 변수에 접근할 수 있으며 th:속성명 그리고 [[ ]] 안에서 사용 가능하다.
+        2) @{...} 표현식 – URL 표현식
+            * @{...} 표현식은 서버의 contextPath를 반영한 URI 로 변경된다. 
+        3) 문자 합치기
+            * 합치고 싶은 문자열을 "|" 으로 감싸거나 + 연산자를 이용해 문자를 합칠 수 있다.
+        4) 비교 연산자 
+            ```html
+            <!-- 이항 연산자 -->    <div th:text="${info.name != 'kim'}"></div>    <div th:text="${info.age >= 30}"></div> 
+            <!-- 삼항 연산자 -->     <div th:text="${info.name == 'kim' ? 'ok' : 'no'}"></div> 
+            ```
+        5) HTML 태그의 컨텐츠 설정 - th:text 
+        6) HTML 태그의 value 속성의 값 설정 - th:value
+        7) th:if, th:unless
+            * if~else 구문과 비슷하다. 조건을 체크하여 참이면<th:if> 그리고 거짓이면<th:unless> 컨텐츠를 표현한다.
+        8) th:switch, th:case
+            * switch 구문과 비슷하다. th:case 속성에 지정된 값과 동일한 서브 태그를 표현한다.
+        9) th:each
+            * for 반복문과 비슷하다
+        10) 링크될 대상 URL : th:href="@{}" 
+        11) th:with="${}"
+            * <div th:with=”userId=${number}” th:text=”${usesrId}”>
+            * 변수형태의 값을 재정의하는 속성이다. th:with를 이용하여 새로운 변수 값을 생성할 수 있다.
+
+## day37 
+
+ModelAttribute - 같이 실행 requestscope 보관도 해준다.
+
+@SessionAttributes({"count1", "count2"}) : 배열 형식으로 저장한다.
+
+s.setcomplete(); : 전체 삭제
+s.removeAttribute(who); : 부분 삭제
+
+public String memberHandle(@ModelAttribute("kkk") StepVO vo) : 다른 이름으로 저장
+
+@ResponseBody 어노테이션 적용 : @ResponseBody 어노테이션이 적용된 경우, 리턴 객체를 http응답으로 전송한다.
+HttpMessageConverter를 이용해서 객체를 HTTP 응답스트림으로 변환한다.
+
+## day38
+
+[ HTTP ]
+
+- 요청(client) - 응답(server)
+- 요청 - GET : 요청헤더
+        POST : 요청헤더+요청바디(application/x-www-urlencoded)
+- 응답 - 응답헤더+ 응답바디
+
+@ResponseBody : 뷰를 통하지 않고 컨트롤러가 직접 응답 바디 구성
+@RequestBody : 요청바디를 다른 형식으로 받겠다.(JSON)
+
+import org.slf4j.Logger; -
+
+logger.error
+logger.warn
+logger.info
+logger.debug
+logger.trace
+
+form 태그에 multipart/form-data 서버에 알리고 전달한다.
+```
+xxx(MultipartFile mfile)
+xxx(MultipartFile 타입을 멤버변수로 정의한 VO클래스 vo)
+xxx(MultipartFile[] 타입을 멤버변수로 정의한 VO클래스 vo) → 다중 파일일 때
+xxx(MultipartRequest mreq)    → 다중 파일일 때 
+```
+
+MultipartFile 의 주요 메소드 
+```
+ String getName()    파라미터의 이름을 리턴한다.   
+ String getOriginalFilename()   업로드 한 파일의 실제!! 이름을 리턴한다.  boolean isEmpty()     업로드 한 파일이 존재하지 않으면 true를 리턴한다.  
+ long getSize()     업로드 한 파일의 크기를 리턴한다.  
+ byte[] getBytes() throws IOException 업로드 한 파일의 데이터를 byte 배열로 리턴다.   
+ InputStream getInputStream()  InputStrem 객체을 리턴한다.  
+ void transferTo(File dest)    업로드 한 파일 데이터를 지정한 파일에 저장한다.
+ ```
+
+upload 
+
+ <input type="file" name="uploadFiles" multiple/> : 여러 파일
+
+Mybatis
