@@ -928,6 +928,27 @@ MultipartFile 의 주요 메소드
 
 upload 
 
+
+
  <input type="file" name="uploadFiles" multiple/> : 여러 파일
 
 Mybatis
+
+## day39
+
+
+```java
+@Update("update meeting set name = #{name}, title = #{title}, meetingdate =    date_format(#{meetingDate}, '%Y/%m/%d %H:%i')  where id = #{id}")  public boolean updateM(MeetingDTO vo) //id 히든 타입
+```
+
+import org.w3c.dom.Document;
+
+#{ ... } where ename = #{ name } :  값으로 시작하는 곳에서 사용가능
+
+
+${ ... } from emp ${}
+
+
+    Select .... from 테이블 이름 ${ mycoondition } s
+
+동적 param -> 2개 이상이면 @Param("")
