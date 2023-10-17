@@ -952,3 +952,7 @@ ${ ... } from emp ${}
     Select .... from 테이블 이름 ${ mycoondition } s
 
 동적 param -> 2개 이상이면 @Param("")
+
+## day40 
+
+10.12 ~ 10.23 [미니프로젝트1](https://www.notion.so/KOSA-1-269f5493e9d5451e84b011cd82f2a131)
