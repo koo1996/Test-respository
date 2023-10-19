@@ -967,3 +967,42 @@ ${ ... } from emp ${}
 
 ## day41
 10.12 ~ 10.23 [미니프로젝트1](https://www.notion.so/KOSA-1-269f5493e9d5451e84b011cd82f2a131)
+
+
+* HTML & CSS Test
+```html
+<style>
+.inner {
+    position: relative;
+    width: 600px;
+    height: 40px;
+    margin: 20px auto;
+    border: 1px solid #bdc1c6;
+    border-radius: 20px;
+}
+input{
+    width: 90%;
+    height: 90%;
+    margin-left: 13px ;
+    margin-top: 2px;
+    border-style: solid;
+    border: 1px;
+    font-size: 15px;
+}
+</style>
+<body>
+    <div class="container">
+        <img src="#">
+        <div class="inner">
+            <input type="search">
+            <div class="searching">
+                <i class="abc"></i>
+            </div>
+            <div class="abc">
+            </div>
+        </div>
+        <div>            
+    </div>
+</body>
+</html>
+```
