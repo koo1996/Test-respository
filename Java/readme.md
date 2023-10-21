@@ -928,6 +928,81 @@ MultipartFile 의 주요 메소드
 
 upload 
 
+
+
  <input type="file" name="uploadFiles" multiple/> : 여러 파일
 
 Mybatis
+
+## day39
+
+
+```java
+@Update("update meeting set name = #{name}, title = #{title}, meetingdate =    date_format(#{meetingDate}, '%Y/%m/%d %H:%i')  where id = #{id}")  public boolean updateM(MeetingDTO vo) //id 히든 타입
+```
+
+import org.w3c.dom.Document;
+
+#{ ... } where ename = #{ name } :  값으로 시작하는 곳에서 사용가능
+
+
+${ ... } from emp ${}
+
+
+    Select .... from 테이블 이름 ${ mycoondition } s
+
+동적 param -> 2개 이상이면 @Param("")
+
+## day40
+* Mybatis : 자바에서는 DB 연동 프로그램을 구현하기 위해 JDBC 기술을 사용한다. JDBC는 관계형 데이터 베이스를 연동하기 위한 다양한 API를 제공한다.
+
+* MyBatis의 특징
+    * 간단하다 : 간단한 퍼시스턴스 프레임워크
+    * 생산성 : 62%정도 줄어드는 코드 , 간단한 설정, 예외 처리도 선택적
+    * 성능 : 구조적 강점(데이터 접근 속도를 높여주는 Join 매핑)
+    * SQL문과 애플리케이션 소스 코드의 분리
+    * SQL쿼리 변경 시마다 자바코드를 수정하거나 따로 컴파일 할 필요가 없다.
+    * 이식성 : 어떤 프로그래밍 언어로도 구현가능 (자바,C#,.NET,RUBY)
+    * 오픈소스이며 무료이다.
+
+## day41
+10.12 ~ 10.23 [미니프로젝트1](https://www.notion.so/KOSA-1-269f5493e9d5451e84b011cd82f2a131)
+
+
+* HTML & CSS Test
+```html
+<style>
+.inner {
+    position: relative;
+    width: 600px;
+    height: 40px;
+    margin: 20px auto;
+    border: 1px solid #bdc1c6;
+    border-radius: 20px;
+}
+input{
+    width: 90%;
+    height: 90%;
+    margin-left: 13px ;
+    margin-top: 2px;
+    border-style: solid;
+    border: 1px;
+    font-size: 15px;
+}
+</style>
+<body>
+    <div class="container">
+        <img src="#">
+        <div class="inner">
+            <input type="search">
+            <div class="searching">
+                <i class="abc"></i>
+            </div>
+            <div class="abc">
+            </div>
+        </div>
+        <div>            
+    </div>
+</body>
+</html>
+```
