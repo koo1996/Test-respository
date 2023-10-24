@@ -968,6 +968,14 @@ ${ ... } from emp ${}
 ## day41
 10.12 ~ 10.23 [미니프로젝트1](https://www.notion.so/KOSA-1-269f5493e9d5451e84b011cd82f2a131)
 
+## day42
+* ERD 생성, 개발 환경 정리
+## day43
+* dao(Mapper), domain(DTO,VO) 생성
+## day44
+* controller 생성
+## day45
+* HTML, CSS, JS 
 
 * HTML & CSS Test
 ```html
