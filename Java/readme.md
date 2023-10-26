@@ -1016,4 +1016,4 @@ input{
 ```
 
 ## 10월24일
-[10월24일.정리](https://www.notion.so/fa1b523c4eef4a74902ebe4018ac20f9?v=2bb2a2e3c55b494ea7110c10634f1dfa&p=2587cfc48d2249268339144c2f1b8cb1&pm=s)
+[10월24일.정리](https://www.notion.so/10-24-2587cfc48d2249268339144c2f1b8cb1)
