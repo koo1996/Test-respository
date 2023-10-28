@@ -1020,3 +1020,6 @@ input{
 
 ## 10월25일
 [10월25일.정리](https://www.notion.so/10-25-4dd002b9f003472da6b4e7da46265c4c)
+
+## 10월26일
+[10월26일.정리](https://www.notion.so/10-26-3ddbc472e01d4b348bd08b6cdf324503)
