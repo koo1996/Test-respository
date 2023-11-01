@@ -1032,3 +1032,6 @@ input{
 
 ## 10월31일
 [10월31일.정리](https://www.notion.so/10-31-0ba736341e6048aeae421676274b5647)
+
+## 11월1일
+[11월1일.정리](https://www.notion.so/11-01-e9192b38e71d45b8adcfa5f899c366ee)
