@@ -1044,3 +1044,6 @@ input{
 
 ## 11월6일
 [11월6일.정리](https://www.notion.so/11-06-f524e86c5d724b3ca425aab4cd7feef4)
+
+## 2차
+[2차 미니프로젝트](https://github.com/jeon-aelim/UniMeeting2)
