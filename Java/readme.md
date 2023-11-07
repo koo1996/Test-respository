@@ -1045,5 +1045,8 @@ input{
 ## 11월6일
 [11월6일.정리](https://www.notion.so/11-06-f524e86c5d724b3ca425aab4cd7feef4)
 
+## 11월7일
+[11월7일.정리](https://www.notion.so/11-07-16a4ef3c5e4e441ba4ffa2318058015c)
+
 ## 2차
 [2차 미니프로젝트](https://github.com/jeon-aelim/UniMeeting2)
