@@ -1053,3 +1053,6 @@ input{
 
 ## 11월8일
 [11월8일.정리](https://www.notion.so/11-08-210805bf78ce49b586ae71ddbcd2f6db)
+
+## 11월9일
+[11월9일.정리](https://www.notion.so/11-09-20291cdd2fa54b42ade37a923923c001)
