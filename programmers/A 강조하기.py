@@ -1,8 +1,4 @@
 def solution(myString):
-    for i in range(len(myString)):
-        if myString[i] == 'a':
-            replace('a','A')
-        else:  
-            myString.upper()
-        
+    myString = myString.lower()
+    myString = myString.replace('a','A')        
     return myString
