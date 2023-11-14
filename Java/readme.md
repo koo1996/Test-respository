@@ -1062,3 +1062,6 @@ input{
 
 ## 11월13일
 [11월13일.정리](https://www.notion.so/11-13-a6ee3fe54b3349e19eac60270e0430ce)
+
+## 11월14일 ~ 11월23일
+[2차 프로젝트 진행](https://www.notion.so/KOSA-1-269f5493e9d5451e84b011cd82f2a131)
