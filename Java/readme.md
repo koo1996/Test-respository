@@ -1065,3 +1065,6 @@ input{
 
 ## 11월14일 ~ 11월23일
 [2차 프로젝트 진행](https://www.notion.so/KOSA-1-269f5493e9d5451e84b011cd82f2a131)
+
+## SQLD
+[SQLD준비](https://www.notion.so/SQLD-1f044f55e8944fc682db895aa93316e6)
