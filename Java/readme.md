@@ -1068,3 +1068,6 @@ input{
 
 ## SQLD
 [SQLD준비](https://www.notion.so/SQLD-1f044f55e8944fc682db895aa93316e6)
+
+## 면접준비
+[면접준비](https://www.notion.so/fa1b523c4eef4a74902ebe4018ac20f9?v=2bb2a2e3c55b494ea7110c10634f1dfa)
