@@ -11,6 +11,7 @@
 9. 입출력과 예외처리
 10. 공공 API활용 프로젝트
 
+[자바정리](https://www.notion.so/351d92ae68b4437bb2c01e77d939e4b9)
 
 ## day4 - 1차원 배열
 ```java
