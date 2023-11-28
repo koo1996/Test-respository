@@ -1075,3 +1075,4 @@ input{
 
 ## 최종 프로젝트
 [최종 프로젝트](https://www.notion.so/155f9433df7d42a2b14ed3663d0d39b6?v=2e540e6efc7e4d4c8ba951c37a4346c3)
+[피그마](https://www.figma.com/files/recents-and-sharing/recently-viewed?fuid=1290841793067032706)
