@@ -1079,3 +1079,6 @@ input{
 
 ## 11월29일
 [11월29일.정리](https://www.notion.so/11-29-468c9797875a4fc6a9919f191c46ae8c)
+
+## 11월30일
+[11월30일.정리](https://www.notion.so/11-30-e786c1b25aaa42fea5bc302006959d04)
