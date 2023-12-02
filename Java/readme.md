@@ -1072,3 +1072,16 @@ input{
 
 ## 면접준비
 [면접준비](https://www.notion.so/fa1b523c4eef4a74902ebe4018ac20f9?v=2bb2a2e3c55b494ea7110c10634f1dfa)
+
+## 최종 프로젝트
+[최종 프로젝트](https://www.notion.so/155f9433df7d42a2b14ed3663d0d39b6?v=2e540e6efc7e4d4c8ba951c37a4346c3)
+[피그마](https://www.figma.com/files/recents-and-sharing/recently-viewed?fuid=1290841793067032706)
+
+## 11월29일
+[11월29일.정리](https://www.notion.so/11-29-468c9797875a4fc6a9919f191c46ae8c)
+
+## 11월30일
+[11월30일.정리](https://www.notion.so/11-30-e786c1b25aaa42fea5bc302006959d04)
+
+## 최종프로젝트 11월24일 ~ 12월29일
+[최종프로젝트]()
