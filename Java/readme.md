@@ -1084,4 +1084,4 @@ input{
 [11월30일.정리](https://www.notion.so/11-30-e786c1b25aaa42fea5bc302006959d04)
 
 ## 최종프로젝트 11월24일 ~ 12월29일
-[최종프로젝트]()
+[최종프로젝트](https://github.com/Phoenix-kosa)
