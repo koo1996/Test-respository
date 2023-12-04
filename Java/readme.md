@@ -1080,6 +1080,6 @@ input{
 [11월30일.정리](https://www.notion.so/11-30-e786c1b25aaa42fea5bc302006959d04)
 
 ## 최종프로젝트 11월24일 ~ 12월29일
-[최종프로젝트](https://github.com/Phoenix-kosa)
-[최종프로젝트 노션](https://www.notion.so/155f9433df7d42a2b14ed3663d0d39b6?v=2e540e6efc7e4d4c8ba951c37a4346c3)
+[최종프로젝트](https://github.com/Phoenix-kosa)<br>
+[최종프로젝트 노션](https://www.notion.so/155f9433df7d42a2b14ed3663d0d39b6?v=2e540e6efc7e4d4c8ba951c37a4346c3)<br>
 [피그마](https://www.figma.com/files/recents-and-sharing/recently-viewed?fuid=1290841793067032706)
