@@ -1084,6 +1084,8 @@ input{
 [최종프로젝트 노션](https://www.notion.so/155f9433df7d42a2b14ed3663d0d39b6?v=2e540e6efc7e4d4c8ba951c37a4346c3)<br>
 [ERD](https://www.notion.so/ERD-7f1847e4a47348109da5faae8a354f01)<br>
 [피그마](https://www.figma.com/files/recents-and-sharing/recently-viewed?fuid=1290841793067032706)
+* 12월11일 -> QnA 게시판 기능 구현 진행중( 데이터 전송 오류 - CORS Error ) 
+
 
 ## 12월19일
 [12월19일.정리]()
