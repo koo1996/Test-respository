@@ -1086,6 +1086,19 @@ input{
 [피그마](https://www.figma.com/files/recents-and-sharing/recently-viewed?fuid=1290841793067032706)
 * 12월11일 -> QnA 게시판 기능 구현 진행중( 데이터 전송 오류 - CORS Error ) 
 
+* Talend API Tester -> request body
+```json
+{
+  
+  "userId" : "둘리44",
+  "title" : "문의합니다44",
+  "content" : "너무 이상해요44", 
+  "createdDate" : "2023-12-15T03:32:53"
+}  
+```
+
 
 ## 12월19일
 [12월19일.정리]()
+
+
