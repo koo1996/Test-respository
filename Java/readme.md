@@ -1071,8 +1071,8 @@ input{
 [SQLD준비](https://www.notion.so/SQLD-1f044f55e8944fc682db895aa93316e6)
 
 ## 면접준비
-[면접준비](https://www.notion.so/fa1b523c4eef4a74902ebe4018ac20f9?v=2bb2a2e3c55b494ea7110c10634f1dfa)
-
+[면접준비1](https://www.notion.so/fa1b523c4eef4a74902ebe4018ac20f9?v=2bb2a2e3c55b494ea7110c10634f1dfa)
+[면접준비2](https://www.notion.so/8931e390e22248bc989b300358c2220a)
 ## 11월29일
 [11월29일.정리](https://www.notion.so/11-29-468c9797875a4fc6a9919f191c46ae8c)
 
@@ -1100,5 +1100,4 @@ input{
 
 ## 12월21일
 [12월21일.정리](https://www.notion.so/12-21-706cea37bc9e46c3b789004948cc9bae)
-
 
