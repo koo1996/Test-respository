@@ -1102,5 +1102,5 @@ input{
 [12월21일.정리](https://www.notion.so/12-21-706cea37bc9e46c3b789004948cc9bae)
 
 ## 12월22일
-[12월22일.정리]()
+[12월22일.정리](https://www.notion.so/12-22-9370288743fe4e51bef1ba87e6e7d924)
 
